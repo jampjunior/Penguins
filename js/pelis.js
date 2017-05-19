@@ -88,14 +88,30 @@ $(document).ready(function () {
 
    });
 
-
-   $('.fa-arrow-circle-right').click(function () {
-       buscarDatos(parseInt($('paginacion').html())+1);
-
-
+    $('.fa-arrow-circle-right').click(function () {
+        var paginaActual = parseInt($('#pagina-actual').html());
+        if (paginaActual > 0) {
+            $('#flecha-izda').removeClass('oculto');
+        }
+        else {
+            $('#flecha-izda').addClass('oculto');
+        }
+        buscaDatos(paginaActual + 1);
     });
 
+    $('.fa-arrow-circle-left').click(function () {
+        var paginaActual = parseInt($('#pagina-actual').html());
+        if (paginaActual === 2) {
+            $('#flecha-izda').addClass('oculto');
+        }
+        else {
+            $('#flecha-izda').removeClass('oculto');
+        }
+        buscaDatos(paginaActual - 1);
+    });
 
+    // SE EJECUTA LA PRIMERA VEZ
+    buscaDatos(1);
 });
 
 //            // var rutaPoster = 'https://image.tmdb.org/t/p/w500'
