@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Mi biblioteca pelis favorita
 Proyecto Javascript desarrollado durante el curso de MSCD
 
@@ -7,10 +7,5 @@ Proyecto Javascript desarrollado durante el curso de MSCD
 #css
 
 
-=======
-# Mi Biblioteca de pelis favorita
-Proyecto Javascript desarrollado durante el curso de MSCD
-#JAVASCRIPT
-#JQUERY
-#CSS3
->>>>>>> master
+
+
