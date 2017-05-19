@@ -7,10 +7,18 @@
 }
 
 .item-pelicula {
+<<<<<<< HEAD
     border: solid 0px green;
     float: left;
     margin-left: 8px;
     display: none;   /*no se me aplica pero al cargar se cargarian las imagenes*/
+=======
+    border: solid 1px #21D8C1;
+    float: left;
+    margin-left: 8px;
+    display: none;   /*no se me aplica pero al cargar se cargarian las imagenes*/
+    margin-top: 3px;
+>>>>>>> master
 }
 
 img {
